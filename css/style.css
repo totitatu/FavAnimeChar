@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #f8f8f8;
+    font-size: 20px;
+    font-family: san-serif, time-new-roman;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+}
+
+h2{
+    text-align:center;
+  }
+
+li{
+    margin: 20px 10px 0 10px;
+}
+
+p{
+    margin: 20px 10px 0 10px;
+
+}
+
+figure{
+    display: block;
+    width: 90vmin;
+    background-color: white;
+    border-style: solid;
+    border-width: 1vmin;
+    margin: 0 auto;
+}
+
+img{
+    width: 90vmin;
+    display: block;
+    border-style: solid;
+    border-width: 0 0 1vmin 0;
+  }
+
+figcaption{
+    text-align: center;
+    line-height: 6vmin;
+    font-size: 4vmin;
+    font-weight: 600;
+
+}
+
+.grid{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-gap: 2vmin;
+    justify-content: space-evenly;
+}
+
+.label{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@media screen and (min-width: 772px){
+body{
+    font-size: 30px;
+}
+.grid{
+    width: 96vw;
+    grid-template-columns: 48vw 48vw;
+    align-items: center;
+}
+figure{
+    width: 36vmin;
+    border-radius: 6vmin;
+}
+figure:nth-child(odd){
+    margin: 0 2vw 0 auto;
+}
+figure:nth-child(even){
+    margin: 0 auto 0 2vw;
+}
+img{
+    width: 36vmin;
+    border-radius: 5vmin 5vmin 0 0;
+}
+}
+
+@media screen and (min-width: 992px){
+figure{
+    width: 36vmin;
+    border-radius: 6vmin;
+}
+figure:nth-child(3n+1){
+    margin: 0 6vw 0 auto;
+}
+figure:nth-child(3n+2){
+    margin: 0 auto 0 6vw;
+}
+figure:nth-child(3n){
+    margin: 0 auto;
+}
+img{
+    width: 36vmin;
+    border-radius: 5vmin 5vmin 0 0;
+}
+}
+
+@media (prefers-reduced-motion: reduce){
+    html{
+	scroll-behavior: auto;
+    }
+}
+
+@media (prefers-color-scheme: dark){
+    body{
+	background-color: #000000;
+	color: #ffff00;
+    }
+    figure{
+	background-color: #000000;
+	border-color: #ffff00;
+    }
+    img{
+	border-color: #ffff00;
+    }
+a:visited {
+  color: white;
+}
+}
